@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Chamando o CSS-->
+    <link rel="stylesheet" href="./CSS/estilos.css">
+</head>
+<body>
+    <header>
+        <h1 class="Bicicleta">Loja de Bicicleta</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Sobre.html">Sobre</a></li>
+                <li><a href="Contato.html">Contato</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <div class="mudarCor">
+                    <input type="button" class="cor" onclick="trocar('#3aeeb1')"/>
+                    <input type="button" class="cor" onclick="trocar('#c13af2')"/>
+                    <input type="button" class="cor" onclick="trocar('#fbff24')"/>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Adicionando Formulário-->
+    <section class="home">
+        <div class="titulo">
+            <h1 id="titulo">Contato</h1>
+
+            <P>Preencha o formulário abaixo para que possamos entrar em Contato</P>
+            <div>Nome:</div>
+            <input type="text" id="nome" />
+            <div>Telefone:</div>
+            <input type="text" id="nome" />
+            <div>E-mail:</div>
+            <input type="text" id="nome" />
+            <!--<input type="submit" id="nome" required ESSE REQUIRED serve para não mandar uma resposta vazia/>-->
+            <p><button onclick="botao-enviar()">Clique aqui para enviar</button></p>
+
+    <!--Chamando o javascript externo-->
+    <script src="./src/js/Contato.js"></script>
+</body>
+</html>
